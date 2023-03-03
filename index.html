@@ -10,18 +10,12 @@
 			margin: 0; /* remove default margin */
 		}
 
-		h1 {
-			color: #008000; /* darker green */
+		h1, h2 {
+			color: #FFFFFF; /* white */
 			text-align: center;
 			text-transform: uppercase;
 			margin-top: 0;
 			padding-top: 50px;
-		}
-
-		h2 {
-			color: #800080; /* purple */
-			margin-top: 50px;
-			text-transform: uppercase;
 		}
 
 		p {
@@ -31,7 +25,8 @@
 
 		.container {
 			max-width: 100%; /* fill end to end of screen horizontally */
-			padding: 50px;
+			padding: 0;
+			margin: 0; /* remove default margin */
 		}
 
 		.highlight {
@@ -44,8 +39,8 @@
 
 		.section {
 			padding: 50px;
-			border-top: 1px solid #808080; /* grey */
-			margin-bottom: 50px;
+			border-top: 10px solid #808080; /* thicker grey border */
+			margin-bottom: 0;
 		}
 
 		.green {
@@ -56,51 +51,55 @@
 		.purple {
 			background-color: #800080; /* purple */
 			color: #FFFFFF; /* white */
+			min-height: calc(100vh - 200px); /* take up rest of page */
 		}
 
-		.grey {
-			background-color: #808080; /* grey */
+		.light-grey {
+			background-color: #C0C0C0; /* light grey */
+			color: #FFFFFF; /* white */
+		}
+
+		.dark-grey {
+			background-color: #808080; /* darker grey */
 			color: #FFFFFF; /* white */
 		}
 
 		.panel {
-			display: flex;
-			justify-content: center;
-			margin-bottom: 50px;
+			background-color: #006400; /* darker green */
+			color: #FFFFFF; /* white */
+			padding: 10px;
+			text-align: center;
+			text-transform: uppercase;
 		}
 
 		.panel a {
-			background-color: #006400; /* darker green */
 			color: #FFFFFF; /* white */
-			padding: 10px 20px;
-			border-radius: 5px;
-			margin-right: 10px;
 			text-decoration: none;
-			text-transform: uppercase;
 			font-weight: bold;
-			transition: background-color 0.3s;
+			padding: 0 10px;
+			transition: color 0.3s;
 		}
 
 		.panel a:hover {
-			background-color: #FFFFFF; /* white */
 			color: #006400; /* darker green */
 		}
 	</style>
 </head>
 <body>
-	<header>
+	<header class="green">
 		<h1>Stylish Page Template</h1>
-		<div class="panel">
+		<nav class="panel">
 			<a href="#">Home</a>
 			<a href="#">About</a>
 			<a href="#">Contact</a>
-		</div>
+		</nav>
 	</header>
-	<div class="container">
-		<section class="section green">
+	<section class="section light-grey">
+		<div class="container">
+			<div class="highlight">Banner 1</div>
+		</div>
+	</section>
+	<section class="section dark-grey">
+		<div class="container">
 			<h2>Section 1</h2>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sagittis suscipit mi a molestie. Cras aliquet, nibh vitae eleifend vehicula, velit velit faucibus velit, sit amet rutrum felis massa et felis. Donec euismod, mauris et tempor pharetra, odio ipsum dictum elit, sit amet ullamcorper lectus odio ut justo.</p>
-		</section>
-		<section class="section purple">
-			<h2>Section 2</h2>
-			<p>Nunc varius odio eget eleifend consequat. Suspendisse vitae
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sagittis suscipit mi a
