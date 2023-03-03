@@ -13,6 +13,8 @@
 			color: #00FF00; /* green */
 			text-align: center;
 			text-transform: uppercase;
+			margin-top: 0;
+			padding-top: 50px;
 		}
 
 		h2 {
@@ -39,19 +41,65 @@
 			text-align: center;
 			text-transform: uppercase;
 		}
+
+		.section {
+			padding: 50px;
+			margin-bottom: 50px;
+		}
+
+		.green {
+			background-color: #00FF00; /* green */
+			color: #000000; /* black */
+		}
+
+		.purple {
+			background-color: #800080; /* purple */
+			color: #FFFFFF; /* white */
+		}
+
+		.grey {
+			background-color: #808080; /* grey */
+			color: #FFFFFF; /* white */
+		}
+
+		.panel {
+			display: flex;
+			justify-content: center;
+			margin-bottom: 50px;
+		}
+
+		.panel a {
+			background-color: #00FF00; /* green */
+			color: #000000; /* black */
+			padding: 10px 20px;
+			border-radius: 5px;
+			margin-right: 10px;
+			text-decoration: none;
+			text-transform: uppercase;
+			font-weight: bold;
+			transition: background-color 0.3s;
+		}
+
+		.panel a:hover {
+			background-color: #FFFFFF; /* white */
+			color: #00FF00; /* green */
+		}
 	</style>
 </head>
 <body>
 	<header>
 		<h1>Stylish Page Template</h1>
+		<div class="panel">
+			<a href="#">Home</a>
+			<a href="#">About</a>
+			<a href="#">Contact</a>
+		</div>
 	</header>
 	<div class="container">
-		<h2>Introduction</h2>
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sagittis suscipit mi a molestie. Cras aliquet, nibh vitae eleifend vehicula, velit velit faucibus velit, sit amet rutrum felis massa et felis. Donec euismod, mauris et tempor pharetra, odio ipsum dictum elit, sit amet ullamcorper lectus odio ut justo. Duis ut euismod magna. Sed eget nisi et nisi cursus pretium. Nullam sodales mauris vel libero bibendum tincidunt. Fusce mollis odio in consequat consequat. Morbi aliquam diam vitae tincidunt tempor. Sed fringilla arcu ut sapien pretium, in tempor arcu faucibus.</p>
-		<p>Nunc varius odio eget eleifend consequat. Suspendisse vitae mi euismod, faucibus ex vel, tristique mi. Maecenas consectetur tortor non quam pellentesque, eget dapibus velit volutpat. Pellentesque mollis turpis vel tellus vulputate, id rhoncus nibh tempor. Sed sit amet orci rutrum, pharetra tellus in, dapibus nisi. Sed finibus viverra magna, at efficitur nisl faucibus quis. Nulla facilisi. Pellentesque in massa leo. Suspendisse posuere justo ut risus volutpat, nec semper mi pharetra. Morbi semper turpis vel tristique viverra. Fusce et enim non purus laoreet pulvinar ut non velit. Vestibulum id justo id magna iaculis suscipit.</p>
-		<div class="highlight">
-			<p>Don't forget to subscribe!</p>
-		</div>
-	</div>
-</body>
-</html>
+		<section class="section green">
+			<h2>Section 1</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sagittis suscipit mi a molestie. Cras aliquet, nibh vitae eleifend vehicula, velit velit faucibus velit, sit amet rutrum felis massa et felis. Donec euismod, mauris et tempor pharetra, odio ipsum dictum elit, sit amet ullamcorper lectus odio ut justo.</p>
+		</section>
+		<section class="section purple">
+			<h2>Section 2</h2>
+			<p>Nunc varius odio eget eleifend consequat. Suspendisse vitae mi euismod, faucibus ex vel, tristique mi. Maecenas consectetur tortor non quam pellentesque, eget dapibus velit vol
