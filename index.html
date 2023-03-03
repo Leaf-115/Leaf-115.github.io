@@ -30,37 +30,34 @@
 		}
 
 		.highlight {
-			background-color: #808080; /* grey */
-			color: #FFFFFF; /* white */
-			padding: 10px;
-			text-align: center;
-			text-transform: uppercase;
+			border-top: 1px solid #C0C0C0; /* thin light-grey border */
+			height: 1px;
+			margin: 0 auto;
+			width: 100%;
 		}
 
 		.section {
 			padding: 50px;
-			border-top: 10px solid #808080; /* thicker grey border */
+			border-top: 10px solid #C0C0C0; /* thicker grey border */
 			margin-bottom: 0;
 		}
 
 		.green {
 			background-color: #006400; /* darker green */
 			color: #FFFFFF; /* white */
+			padding-bottom: 20px; /* add spacing below header */
 		}
 
 		.purple {
 			background-color: #800080; /* purple */
 			color: #FFFFFF; /* white */
-			min-height: calc(100vh - 200px); /* take up rest of page */
+			padding: 50px;
+			min-height: calc(100vh - 250px); /* take up rest of page */
 		}
 
 		.light-grey {
+			border-top: 10px solid #C0C0C0; /* thicker grey border */
 			background-color: #C0C0C0; /* light grey */
-			color: #FFFFFF; /* white */
-		}
-
-		.dark-grey {
-			background-color: #808080; /* darker grey */
 			color: #FFFFFF; /* white */
 		}
 
@@ -70,6 +67,7 @@
 			padding: 10px;
 			text-align: center;
 			text-transform: uppercase;
+			margin-bottom: 0;
 		}
 
 		.panel a {
@@ -93,13 +91,14 @@
 			<a href="#">About</a>
 			<a href="#">Contact</a>
 		</nav>
+		<div class="highlight"></div>
 	</header>
 	<section class="section light-grey">
 		<div class="container">
-			<div class="highlight">Banner 1</div>
+			<div class="highlight"></div>
 		</div>
 	</section>
 	<section class="section dark-grey">
 		<div class="container">
 			<h2>Section 1</h2>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sagittis suscipit mi a
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sagittis suscipit mi a, aliquet ultrices ante
