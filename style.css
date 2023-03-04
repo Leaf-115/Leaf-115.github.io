@@ -21,10 +21,20 @@ header {
   width: 100%;
 }
 
-nav {
+.header-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.logo {
+  margin: 0;
+}
+
+nav {
+  position: relative;
 }
 
 #menu-btn {
@@ -41,10 +51,10 @@ nav {
   padding: 0;
   position: absolute;
   top: 60px;
-  right: -200px;
+  left: -200px;
   background-color: #222222;
   width: 200px;
-  transition: right 0.3s ease-in-out;
+  transition: left 0.3s ease-in-out;
 }
 
 #menu li {
@@ -58,7 +68,7 @@ nav {
 
 /* Slide-out menu */
 #menu-btn:hover + #menu, #menu:hover {
-  right: 0;
+  left: 0;
 }
 
 /* Main content */
@@ -70,16 +80,4 @@ main {
 
 section {
   padding: 50px;
-  border-bottom: 1px solid #cccccc; /* thin horizontal lines */
-}
-
-section:last-child {
-  border-bottom: none;
-}
-
-h1, h2 {
-  color: #00aa00; /* dark green */
-}
-
-ul {
-  list-style:
+  border-bottom: 1px solid #cccccc
