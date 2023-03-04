@@ -44,6 +44,8 @@ nav {
   color: #ffffff;
   font-size: 1.2em;
   cursor: pointer;
+  position: relative;
+  z-index: 1;
 }
 
 #menu {
@@ -56,6 +58,7 @@ nav {
   background-color: #222222;
   width: 200px;
   transition: left 0.3s ease-in-out;
+  z-index: 1;
 }
 
 #menu li {
@@ -75,12 +78,4 @@ nav {
 /* Main content */
 main {
   padding-top: 100px; /* to push content below the header */
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-section {
-  padding: 50px;
-}
-
-/* Footer
+  max-width: 
