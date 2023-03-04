@@ -1,110 +1,41 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Stylish Page Template</title>
-	<style>
-		body {
-			background-color: #000000; /* black */
-			color: #FFFFFF; /* white */
-			font-family: Arial, sans-serif;
-			margin: 0; /* remove default margin */
-		}
-
-		h1, h2 {
-			color: #FFFFFF; /* white */
-			text-align: center;
-			text-transform: uppercase;
-			margin-top: 0;
-			padding-top: 50px;
-		}
-
-		p {
-			line-height: 1.5;
-			margin-bottom: 20px;
-		}
-
-		.container {
-			max-width: 100%; /* fill end to end of screen horizontally */
-			padding: 0;
-			margin: 0; /* remove default margin */
-		}
-
-		.highlight {
-			border-top: 1px solid #C0C0C0; /* thin light-grey border */
-			height: 1px;
-			margin: 0 auto;
-			width: 100%;
-		}
-
-		.section {
-			padding: 50px;
-			border-top: 10px solid #C0C0C0; /* thicker grey border */
-			margin-bottom: 0;
-		}
-
-		.green {
-			background-color: #006400; /* darker green */
-			color: #FFFFFF; /* white */
-			padding-bottom: 20px; /* add spacing below header */
-		}
-
-		.purple {
-			background-color: #800080; /* purple */
-			color: #FFFFFF; /* white */
-			padding: 50px;
-			min-height: calc(100vh - 350px); /* take up rest of page */
-		}
-
-		.dark-grey {
-			background-color: #333333; /* dark grey */
-			color: #FFFFFF; /* white */
-			padding: 50px;
-		}
-
-		.light-grey {
-			border-top: 10px solid #C0C0C0; /* thicker grey border */
-			background-color: #C0C0C0; /* light grey */
-			color: #FFFFFF; /* white */
-			height: 50vh; /* half of viewport height */
-		}
-
-		.panel {
-			background-color: #006400; /* darker green */
-			color: #FFFFFF; /* white */
-			padding: 10px;
-			text-align: center;
-			text-transform: uppercase;
-			margin-bottom: 0;
-		}
-
-		.panel a {
-			color: #FFFFFF; /* white */
-			text-decoration: none;
-			font-weight: bold;
-			padding: 0 10px;
-			transition: color 0.3s;
-		}
-
-		.panel a:hover {
-			color: #006400; /* darker green */
-		}
-	</style>
-</head>
-<body>
-	<header class="green">
-		<h1>Stylish Page Template</h1>
-		<nav class="panel">
-			<a href="#">Home</a>
-			<a href="#">About</a>
-			<a href="#">Contact</a>
-		</nav>
-		<div class="highlight"></div>
-	</header>
-	<section class="section light-grey">
-		<div class="container">
-			<div class="highlight"></div>
-		</div>
-	</section>
-	<section class="section dark-grey">
-		<div class="container">
-			<h2>
+  <head>
+    <title>My Sleek and Modern Webpage</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+      <nav>
+        <button id="menu-btn">Menu</button>
+        <ul id="menu">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <h1>Welcome to my webpage</h1>
+        <p>This is a sample paragraph of text. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse et bibendum velit. </p>
+      </section>
+      <section>
+        <h2>About me</h2>
+        <p>Here's some information about me. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse et bibendum velit. </p>
+      </section>
+      <section>
+        <h2>Services</h2>
+        <ul>
+          <li>Service 1</li>
+          <li>Service 2</li>
+          <li>Service 3</li>
+        </ul>
+      </section>
+    </main>
+    <footer>
+      <p>Copyright © 2023</p>
+    </footer>
+  </body>
+</html>

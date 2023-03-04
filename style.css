@@ -1,0 +1,85 @@
+/* General styling */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #333333; /* dark grey */
+  color: #ffffff; /* white text */
+}
+
+/* Header */
+header {
+  background-color: #222222; /* slightly darker than main background */
+  padding: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#menu-btn {
+  background-color: #222222;
+  border: none;
+  color: #ffffff;
+  font-size: 1.2em;
+  cursor: pointer;
+}
+
+#menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 60px;
+  right: -200px;
+  background-color: #222222;
+  width: 200px;
+  transition: right 0.3s ease-in-out;
+}
+
+#menu li {
+  padding: 10px;
+}
+
+#menu li a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/* Slide-out menu */
+#menu-btn:hover + #menu, #menu:hover {
+  right: 0;
+}
+
+/* Main content */
+main {
+  padding-top: 100px; /* to push content below the header */
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+section {
+  padding: 50px;
+  border-bottom: 1px solid #cccccc; /* thin horizontal lines */
+}
+
+section:last-child {
+  border-bottom: none;
+}
+
+h1, h2 {
+  color: #00aa00; /* dark green */
+}
+
+ul {
+  list-style:
